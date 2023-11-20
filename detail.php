@@ -10,12 +10,6 @@ if (!$connection) {
     die("Connection failed: " . mysqli_connect_error());
 }
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Search Household Items</title>
-</head>
-<body>
     
 
     <?php
