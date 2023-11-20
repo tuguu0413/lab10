@@ -4,12 +4,12 @@
 <body>
 
 <h2>Search Household Items</h2>
-    <form action="detail.php">
+    <form>
         <input type="text" name="search_query" placeholder="Enter item name">
-        <div id="demo">
-        <button type="button" onclick="loadXMLDoc()">Search</button>
-        </div>
     </form>
+    <div id="demo">
+      <button type="button" onclick="loadXMLDoc()">Search</button>
+      </div>
 <script>
 function loadXMLDoc() {
   var xhttp = new XMLHttpRequest();
@@ -19,7 +19,7 @@ function loadXMLDoc() {
       this.responseText;
     }
   };
-  xhttp.open("GET", "detail.php", true);
+  xhttp.open("GET", "detail.php?search_query", true);
   xhttp.send();
 }
 </script>
