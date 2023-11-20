@@ -5,7 +5,7 @@
 
 <h2>Search Household Items</h2>
     <form>
-        <input type="text" name="search_query" placeholder="Enter item name">
+        <input id="res" type="text" name="search_query" placeholder="Enter item name">
     </form>
     <div id="demo">
       <button type="button" onclick="loadXMLDoc()">Search</button>
@@ -19,7 +19,8 @@ function loadXMLDoc() {
       this.responseText;
     }
   };
-  xhttp.open("GET", "detail.php?search_query", true);
+  var result = document.getElementById("res").nodeValue;
+  xhttp.open("GET", "detail.php?search_query" + result, true);
   xhttp.send();
 }
 </script>
