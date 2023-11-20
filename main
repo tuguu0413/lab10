@@ -4,7 +4,7 @@
 <body>
 
 <h2>Search Household Items</h2>
-    <form method="GET" action="detail.php">
+    <form action="detail.php">
         <input type="text" name="search_query" placeholder="Enter item name">
         <div id="demo">
         <button type="button" onclick="loadXMLDoc()">Search</button>
